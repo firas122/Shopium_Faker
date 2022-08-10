@@ -1,0 +1,8 @@
+name,AZIZA
+_id,56aa3d0a-3ae6-48cb-9b23-57485ed40ef3
+total,477111
+date,1996-04-12
+time,03:23
+extractiondate,03/02/2008, 07:04:54
+userobj,{'name': 'Maryse Salmon Le Boutin', 'sex': 'F', 'address': 'rue Lucy Pons\n08737 Hamon', 'email': 'clemence11@hotmail.fr', 'birthdate': '1974-07-24'}
+prods,[{'pname': 'Saucisses', 'pquantity': 8, 'pupri': 5935.0, 'ptotal': 47480.0}, {'pname': 'Souris en bois légèrement utilisée', 'pquantity': 8, 'pupri': 4615.0, 'ptotal': 36920.0}, {'pname': 'Clavier souple', 'pquantity': 9, 'pupri': 4291.0, 'ptotal': 38619.0}, {'pname': 'Poulet savoureux', 'pquantity': 3, 'pupri': 7296.0, 'ptotal': 21888.0}, {'pname': 'Savoureuse Salade Concrète', 'pquantity': 4, 'pupri': 1474.0, 'ptotal': 5896.0}, {'pname': 'Serviettes en acier fabriquées à la main', 'pquantity': 9, 'pupri': 8087.0, 'ptotal': 72783.0}, {'pname': 'Pizza au coton rustique', 'pquantity': 4, 'pupri': 8201.0, 'ptotal': 32804.0}]
