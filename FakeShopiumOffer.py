@@ -10,14 +10,8 @@ fake.add_provider(faker_commerce.Provider)
 try:
     client = pymongo.MongoClient("mongodb://firas:islamislam1@cluster0-shard-00-00.mnvbj.mongodb.net:27017,cluster0-shard-00-01.mnvbj.mongodb.net:27017,cluster0-shard-00-02.mnvbj.mongodb.net:27017/?ssl=true&replicaSet=atlas-6o1kj8-shard-0&authSource=admin&retryWrites=true&w=majority")
     db = client.Shopium_Fake_Data
-    T = db.reviewsData
+    T = db.offresData
     print("connection established")
 except:
     print("cannot connect")
-reviews = []
-#productids = T.find().distinct('_id')
-with open("./reviews.txt") as file:
-    while (line := file.readline().rstrip()):
-        reviews.append(line)
-print(reviews)
-#Reviewbject = {"_id":fake.uuid4(),"userId":fake.uuid4(),"offerId":random.choice(productids),"text":random.choice(reviews),"image":fake.url(),"createdAt":str(fake.date_time()),"userName":"","rating":random.randint(0,5)}
+
