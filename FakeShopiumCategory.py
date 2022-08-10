@@ -18,4 +18,4 @@ categoryname = ["Apparel", "Footwear", "Bags", "Accessories", "Jewelry", "Eyewea
 
 for i in range(len(categoryname)):
     catobj = {"_id":fake.uuid4(),"name":categoryname[i],"createdAt":str(fake.date_time()),"updatedAt":str(fake.date_time())}
-    print(catobj)
+    T.insert_one(catobj)
