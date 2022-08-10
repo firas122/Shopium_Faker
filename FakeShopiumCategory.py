@@ -1,4 +1,3 @@
-import random
 import pymongo as pymongo
 from faker import Faker
 import faker_commerce
@@ -15,3 +14,8 @@ try:
 except:
     print("cannot connect")
 
+categoryname = ["Apparel", "Footwear", "Bags", "Accessories", "Jewelry", "Eyewear", "Cosmetics", "Beauty", "Electronics", "Sports", "Health"]
+
+for i in range(len(categoryname)):
+    catobj = {"_id":fake.uuid4(),"name":categoryname[i],"createdAt":str(fake.date_time()),"updatedAt":str(fake.date_time())}
+    print(catobj)
