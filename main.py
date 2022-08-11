@@ -15,7 +15,7 @@ try:
     print("connection established")
 except:
     print("cannot connect")
-for x in range(2):
+for x in range(1000):
     products = []
     total = 0
     for y in range(random.randint(1, 9)):
