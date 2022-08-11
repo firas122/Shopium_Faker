@@ -35,6 +35,24 @@ for i in range(1000):
         friendRequest.append({"_id":fake.uuid4(),"nom":fake.name(),"prenom":fake.name()})
     for z in range(random.randint(1, 4)):
         sendRequest.append({"_id":fake.uuid4(),"nom":fake.name(),"prenom":fake.name()})
-    userobj={"_id":fake.uuid4(),"nom":fake.name(),"prenom":fake.name(),"pays":"tunisie","ville":random.choice(pays),"email":fake.email(),"password":random.choice(passwords),"role":random.choice(["admin","subscriber"]),"photo":fake.url(),"cloudinary_id":fake.uuid4(),"verified":fake.boolean(chance_of_getting_true=75),"codeParrainage":random.randint(10000, 99999),"amis":amis,"friendRequest":friendRequest,"sendRequest":sendRequest,"createdAt":str(fake.date_time()),"updatedAt":str(fake.date_time()),"date":str(fake.date()),"genre":random.choice(["H","F"])}
+    userobj={"_id":fake.uuid4(),
+             "nom":fake.name(),
+             "prenom":fake.name(),
+             "pays":"tunisie",
+             "ville":random.choice(pays),
+             "email":fake.email(),
+             "password":random.choice(passwords),
+             "role":random.choice(["admin","subscriber"]),
+             "photo":fake.url(),
+             "cloudinary_id":fake.uuid4(),
+             "verified":fake.boolean(chance_of_getting_true=75),
+             "codeParrainage":random.randint(10000, 99999),
+             "amis":amis,
+             "friendRequest":friendRequest,
+             "sendRequest":sendRequest,
+             "createdAt":str(fake.date_time()),
+             "updatedAt":str(fake.date_time()),
+             "date":str(fake.date()),
+             "genre":random.choice(["H","F"])}
     T.insert_one(userobj)
     print(userobj)

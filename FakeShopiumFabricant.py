@@ -15,5 +15,11 @@ try:
 except:
     print("cannot connect")
 userIds = db.usersData.find().distinct('_id')
-fabobj= {"_id":fake.uuid4(),"name":"its name","password":"","logo":fake.url(),"phone":fake.phone_number(),"createdAt":str(fake.date_time()),"updateddAt":str(fake.date_time())}
+fabobj= {"_id":fake.uuid4(),
+         "name":"its name",
+         "password":"",
+         "logo":fake.url(),
+         "phone":fake.phone_number(),
+         "createdAt":str(fake.date_time()),
+         "updateddAt":str(fake.date_time())}
 print(fabobj)
