@@ -28,6 +28,7 @@ Ribs    :
         |_____> User
 
 
+Database expected structure :
 
 User :        _id:           ID
               nom:           string
