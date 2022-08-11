@@ -20,10 +20,10 @@ with open("./reviews.txt") as file:
     while (line := file.readline().rstrip()):
         reviews.append(line)
 print(reviews)
-userIds = db.usersData.find({},{"_id":1,"nom":1})
+userIds = db.usersData.find({}, {"_id": 1, "nom": 1})
 offerIds = db.offresData.find().distinct('_id')
 for i in range(1000):
-    a=random.randint(0,800)
+    a = random.randint(0, 800)
     Reviewbject = {"_id": fake.uuid4(),
                    "userId": userIds[a]["_id"],
                    "offerId": random.choice(offerIds),
@@ -31,7 +31,7 @@ for i in range(1000):
                    "image": fake.url(),
                    "createdAt": str(fake.date_time()),
                    "userName": userIds[a]["nom"],
-                   "rating": random.randint(1,5)}
+                   "rating": random.randint(1, 5)}
     print(Reviewbject)
     T.insert_one(Reviewbject)
 #print(userIds[0]["_id"])
