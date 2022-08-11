@@ -24,19 +24,19 @@ for i in range(500):
         offers.append(str(fake.uuid4()))
     for x in range(3):
         photos.append(str(fake.url()))
-    ProductObject = {"_id":fake.uuid4(),
+    ProductObject = {"_id": fake.uuid4(),
                      "name": trans.text,
-                     "price":round(random.uniform(100, 9999), 0),
-                     "photo":photos,
-                     "categoryId":random.choice(categoryids),
-                     "fabricant":fake.uuid4(),
-                     "offer":offers,
-                     "logo":fake.url(),
-                     "isLiked":fake.boolean(),
-                     "isnew":fake.boolean(),
-                     "createdAt":str(fake.date_time()),
-                     "updateddAt":str(fake.date_time()),
-                     "barcode":"619"+fake.ean(length=8)}
+                     "price": round(random.uniform(100, 9999), 0),
+                     "photo": photos,
+                     "categoryId": random.choice(categoryids),
+                     "fabricant": fake.uuid4(),
+                     "offer": offers,
+                     "logo": fake.url(),
+                     "isLiked": fake.boolean(),
+                     "isnew": fake.boolean(),
+                     "createdAt": str(fake.date_time()),
+                     "updateddAt": str(fake.date_time()),
+                     "barcode": "619"+fake.ean(length=8)}
     T.insert_one(ProductObject)
     print(ProductObject)
 

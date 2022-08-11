@@ -16,8 +16,8 @@ except:
     print("cannot connect")
 userIds = db.usersData.find().distinct('_id')
 for i in range(100):
-    fidobj = {"_id":fake.uuid4(),
-              "userId":random.choice(userIds),
-              "data":"619"+fake.ean(length=8),
-              "format":"EAN13"}
+    fidobj = {"_id": fake.uuid4(),
+              "userId": random.choice(userIds),
+              "data": "619"+fake.ean(length=8),
+              "format": "EAN13"}
     T.insert_one(fidobj)

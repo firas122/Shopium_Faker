@@ -14,14 +14,17 @@ try:
     print("connection established")
 except:
     print("cannot connect")
+
 reviews = []
 #productids = T.find().distinct('_id')
 with open("./reviews.txt") as file:
     while (line := file.readline().rstrip()):
         reviews.append(line)
 print(reviews)
+
 userIds = db.usersData.find({}, {"_id": 1, "nom": 1})
 offerIds = db.offresData.find().distinct('_id')
+
 for i in range(1000):
     a = random.randint(0, 800)
     Reviewbject = {"_id": fake.uuid4(),
