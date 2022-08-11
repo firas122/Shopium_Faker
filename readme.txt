@@ -22,3 +22,6 @@ Category:
 
 Offer:
         |-----> Product
+
+
+to be UPDATED
