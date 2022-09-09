@@ -281,7 +281,8 @@ _Below is an example of how you can instruct your audience on installing and set
 ```
 <br /><br />
 * Terminal output will be as a guide through the inputs process as illustrated above :
-
+<br /><br />
+>Usage examples will be added here 
 <br /><br />
 
 
@@ -294,8 +295,9 @@ _Below is an example of how you can instruct your audience on installing and set
 - [x] Generate Fake Data
 - [x] Data customized Generation
 - [x] Assure relation between generated tables
-- [ ] Multi-Ticket Forms support
-- [ ] Design a Machine learning approach
+- [ ] Extend predefined data
+- [ ] Provide more options for a deeper customizations
+- [ ] Add more scenarios for data generation
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
